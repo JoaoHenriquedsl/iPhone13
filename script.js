@@ -30,27 +30,28 @@ function transition(colorChange) {
 // trocar de imagem
 verde.addEventListener('click', () => {
   img.src = 'imgs/iphone_green.jpg';
-  transition('verde');
+  img.addEventListener('load', () => transition('verde'))
+
 });
 
 prateado.addEventListener('click', () => {
   img.src = 'imgs/iphone_silver.jpg';
-  transition('prateado');
+  img.addEventListener('load', () => transition('verde'))
 });
 
 dourado.addEventListener('click', () => {
   img.src = 'imgs/iphone_golden.jpg';
-  transition('dourado');
+  img.addEventListener('load', () => transition('verde'))
 });
 
 grafite.addEventListener('click', () => {
   img.src = 'imgs/iphone_grafite.jpg';
-  transition('grafite');
+  img.addEventListener('load', () => transition('verde'))
 });
 
 azul.addEventListener('click', () => {
   img.src = 'imgs/iphone_blue.jpg';
-  transition('azul');
+  img.addEventListener('load', () => transition('verde'))
 });
 
 // abrir e fechar o menu
